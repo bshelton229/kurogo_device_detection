@@ -1,5 +1,8 @@
 ## NOTE: This test fails when webrick is loaded before any of our code on OSX
 require 'webrick'
+require 'net/https'
+require 'cgi'
+require 'uri'
 require File.expand_path('../spec_helper.rb', __FILE__)
 
 describe "When webrick is loaded first" do
